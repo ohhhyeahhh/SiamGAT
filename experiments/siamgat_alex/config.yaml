@@ -1,0 +1,86 @@
+META_ARC: "siamcar_alex"
+
+BACKBONE:
+    TYPE: "alexnet"
+    KWARGS:
+        width_mult: 1.0   
+    PRETRAINED: 'pretrained_models/alexnet-bn.pth'
+    TRAIN_LAYERS: ['layer4', 'layer5']
+    TRAIN_EPOCH: 10
+    LAYERS_LR: 1.0
+
+ADJUST:
+    ADJUST: False
+
+
+TRACK:
+    TYPE: 'SiamCARTracker'
+    PENALTY_K: 0.16
+    WINDOW_INFLUENCE: 0.40
+    LR: 0.30
+    EXEMPLAR_SIZE: 127
+    INSTANCE_SIZE: 279
+    CONTEXT_AMOUNT: 0.5
+    SCORE_SIZE: 25
+    STRIDE: 8
+    OFFSET: 43
+
+TRAIN:
+    EPOCH: 20
+    START_EPOCH: 0
+    SEARCH_SIZE: 279
+    OUTPUT_SIZE:  25 #17
+    RESUME: ''
+#    PRETRAINED: '/home/amax/PycharmProjects/SiamCAR-new/tools/snapshot_7_18_alex/checkpoint_e19.pth'
+
+    CLS_WEIGHT: 1.0
+    LOC_WEIGHT: 3.0
+    CEN_WEIGHT: 1.0
+    BATCH_SIZE: 124 #128
+
+    NUM_CLASSES: 2 # 2
+    NUM_CONVS: 4 # 2
+    PRIOR_PROB: 0.01
+    OUTPUT_SIZE: 25 # 31
+    ATTENTION: True
+    ATTENTION_NUM: 1
+
+    LR:
+      TYPE: 'log'
+      KWARGS:
+        start_lr: 0.01
+        end_lr: 0.0005
+    LR_WARMUP:
+      TYPE: 'step'
+      EPOCH: 5
+      KWARGS:
+        start_lr: 0.005
+        end_lr: 0.01
+        step: 1
+
+DATASET:
+    NAMES:
+    - 'VID'
+    - 'YOUTUBEBB'
+    - 'COCO'
+    - 'DET'
+
+    - 'GOT'
+#    - 'LaSOT'
+
+    TEMPLATE:
+        SHIFT: 4
+        SCALE: 0.05
+        BLUR: 0.0
+        FLIP: 0.0
+        COLOR: 1.0
+
+    SEARCH:
+        SHIFT: 64
+        SCALE: 0.18
+        BLUR: 0.2
+        FLIP: 0.0
+        COLOR: 1.0
+
+    NEG: 0.0
+    GRAY: 0.0
