@@ -1,11 +1,11 @@
-tools
+/tools/*
 *.txt
 *.pth
-!tools/testTrack.py
-!tools/eval.py
+!/tools/testTracker.py
+!/tools/eval.py
 toolkit/datasets/trackingnet.py
 toolkit/datasets/vot.py
-pretrained_models/inception_v3.pt
+pretrained_models/inception_v3.pth
 pysot/models/loss_car.py
 pysot/models/init_weight.py
 pysot/models/model_builder_gat_withtrain.py
