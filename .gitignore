@@ -5,7 +5,6 @@
 !/tools/eval.py
 toolkit/datasets/trackingnet.py
 toolkit/datasets/vot.py
-/pretrained_models/*.pth
 pysot/models/loss_car.py
 pysot/models/init_weight.py
 pysot/models/model_builder_gat_withtrain.py
