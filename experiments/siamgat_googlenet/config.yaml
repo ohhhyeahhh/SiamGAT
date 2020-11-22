@@ -1,0 +1,75 @@
+META_ARC: "siamgat_googlenet"
+
+BACKBONE:
+    TYPE: "googlenet_ou"
+    PRETRAINED: 'pretrained_models/inception_v3.pth'
+    TRAIN_LAYERS: ['Mixed_5b','Mixed_5c','Mixed_5d', 'Mixed_6a', 'Mixed_6b', 'Mixed_6c', 'Mixed_6d', 'Mixed_6e', 'channel_reduce']
+    CHANNEL_REDUCE_LAYERS: ['channel_reduce']
+    TRAIN_EPOCH: 10
+    CROP_PAD: 4
+    LAYERS_LR: 0.1
+
+TRACK:
+    TYPE: 'SiamGATTracker'
+    EXEMPLAR_SIZE: 127
+    INSTANCE_SIZE: 287
+    SCORE_SIZE: 25
+    CONTEXT_AMOUNT: 0.5
+    STRIDE: 8
+    OFFSET: 45
+
+TRAIN:
+    EPOCH: 20
+    START_EPOCH: 0
+    SEARCH_SIZE: 287
+    BATCH_SIZE: 76
+    CLS_WEIGHT: 1.0
+    LOC_WEIGHT: 3.0
+    CEN_WEIGHT: 1.0
+    RESUME: ''
+    PRETRAINED: ''
+    NUM_CLASSES: 2
+    NUM_CONVS: 4
+    PRIOR_PROB: 0.01
+    OUTPUT_SIZE: 25
+    ATTENTION: True
+
+    LR:
+      TYPE: 'log'
+      KWARGS:
+        start_lr: 0.01
+        end_lr: 0.0005
+    LR_WARMUP:
+      TYPE: 'step'
+      EPOCH: 5
+      KWARGS:
+        start_lr: 0.005
+        end_lr: 0.01
+        step: 1
+
+DATASET:
+    NAMES: 
+    - 'VID'
+    - 'YOUTUBEBB'
+    - 'COCO'
+    - 'DET'
+    - 'GOT'
+
+    VIDEOS_PER_EPOCH: 800000
+
+    TEMPLATE:
+        SHIFT: 4
+        SCALE: 0.05
+        BLUR: 0.0
+        FLIP: 0.0
+        COLOR: 1.0
+
+    SEARCH:
+        SHIFT: 64
+        SCALE: 0.18
+        BLUR: 0.2
+        FLIP: 0.0
+        COLOR: 1.0
+
+    NEG: 0.2
+    GRAY: 0.0

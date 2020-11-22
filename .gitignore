@@ -1,0 +1,13 @@
+tools
+*.txt
+*.pth
+!tools/testTrack.py
+!tools/eval.py
+toolkit/datasets/trackingnet.py
+toolkit/datasets/vot.py
+pretrained_models/inception_v3.pt
+pysot/models/loss_car.py
+pysot/models/init_weight.py
+pysot/models/model_builder_gat_withtrain.py
+pysot/tracker/siamgat_tracker_upmis.py
+setup.py
