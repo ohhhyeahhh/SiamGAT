@@ -1,4 +1,5 @@
 /experimentsWITHtrain/
+/pysot/core/configWITHtrain.py
 /tools/*
 *.txt
 !/tools/testTracker.py
