@@ -16,9 +16,10 @@ Download the pretrained model and put them into `tools/snapshot` directory.
 Download testing datasets and put them into `test_dataset` directory. Jsons of commonly used datasets can be downloaded from [BaiduYun](https://pan.baidu.com/s/1js0Qhykqqur7_lNRtle1tA#list/path=%2F). If you want to test the tracker on a new dataset, please refer to [pysot-toolkit](https://github.com/StrangerZhang/pysot-toolkit) to set test_dataset.
 
 ```bash 
-python testTracker.py                                \
-	--dataset UAV123                      \ # dataset_name
-	--snapshot snapshot/otb_uav_model.pth  # tracker_name
+python testTracker.py \    
+        --config ../experiments/siamgat_googlenet_otb_uav/config.yaml \
+	--dataset UAV123 \                                 # dataset_name
+	--snapshot snapshot/otb_uav_model.pth              # tracker_name
 ```
 The testing result will be saved in the `results/dataset_name/tracker_name` directory.
 
