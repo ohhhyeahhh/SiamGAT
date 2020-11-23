@@ -24,10 +24,13 @@ python testTracker.py \
 The testing result will be saved in the `results/dataset_name/tracker_name` directory.
 
 ## 3. Evaluation
-We provide the tracking [results](https://pan.baidu.com/s/1Ohit3C_hdy70x-JrdGUfeg) (extract code: 0wod) of GOT-10K, LaSOT, OTB100 and UAV123. If you want to evaluate the tracker, please put those results into  `results` directory.
+We provide the tracking [results](https://pan.baidu.com/s/1Ohit3C_hdy70x-JrdGUfeg) (extract code: 0wod) of GOT-10k, LaSOT, OTB100 and UAV123. If you want to evaluate the tracker, please put those results into  `results` directory.
 ```
 python eval.py 	                          \
 	--tracker_path ./results          \ # result path
 	--dataset UAV123                  \ # dataset_name
 	--tracker_prefix 'otb_uav_model'   # tracker_name
 ```
+
+## 4. Acknowledgement
+The code is implemented based on [pysot](https://github.com/STVIR/pysot) and [SiamCAR](https://github.com/ohhhyeahhh/SiamCAR). We would like to express our sincere thanks to the contributors.
