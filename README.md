@@ -10,7 +10,7 @@ pip install -r requirements.txt
 ## 2. Test
 Download the pretrained model:  
 [otb_uav_model](https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA) extract code: w1rs  
-[got10k_model](ghttps://pan.baidu.com/s/1LcKRO4t3vqGs8r7Lb73lmA) extract code: n91w  
+[got10k_model](https://pan.baidu.com/s/1LcKRO4t3vqGs8r7Lb73lmA) extract code: n91w  
 [lasot_model](https://pan.baidu.com/s/17-pG-Mytg4sT330mhd584A) extract code: dilp  
  and put them into `tools/snapshot` directory.
 
