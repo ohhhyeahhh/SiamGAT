@@ -149,12 +149,6 @@ __C.DATASET.DET.ANNO = 'training_dataset/det/train.json'
 __C.DATASET.DET.FRAME_RANGE = 1
 __C.DATASET.DET.NUM_USE = 200000
 
-__C.DATASET.MOT = CN()
-__C.DATASET.MOT.ROOT = '/data0/MOT/crop511/train'
-__C.DATASET.MOT.ANNO = 'training_dataset/mot/train.json'
-__C.DATASET.MOT.FRAME_RANGE = 100
-__C.DATASET.MOT.NUM_USE = -1
-
 __C.DATASET.GOT = CN()
 __C.DATASET.GOT.ROOT = '/data1/got10k_training/crop511'
 __C.DATASET.GOT.ANNO = 'training_dataset/got10k/train.json'
