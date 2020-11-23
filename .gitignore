@@ -1,3 +1,4 @@
+/experimentsWITHtrain/
 /tools/*
 *.txt
 !/tools/testTracker.py
