@@ -60,7 +60,7 @@ class Graph_Attention_Union(nn.Module):
         similar = F.softmax(similar, dim=2)
 
         embedding = torch.matmul(similar, zf_g_plain).permute(0, 2, 1)
-        embedding = embedding.view(-1, shape_z[1], shape_x[2], shape_x[3])
+        embedding = embedding.view(-1, shape_x[1], shape_x[2], shape_x[3])
 
         # aggregated feature
         output = torch.cat([embedding, xf_g], 1)
