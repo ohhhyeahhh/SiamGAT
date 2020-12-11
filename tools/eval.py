@@ -92,7 +92,6 @@ def main():
             for ret in tqdm(pool.imap_unordered(benchmark.eval_precision,
                 trackers), desc='eval precision', total=len(trackers), ncols=100):
                 precision_ret.update(ret)
-        norm_precision_ret = {}
 
 
 if __name__ == '__main__':
