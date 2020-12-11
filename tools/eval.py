@@ -92,6 +92,8 @@ def main():
             for ret in tqdm(pool.imap_unordered(benchmark.eval_precision,
                 trackers), desc='eval precision', total=len(trackers), ncols=100):
                 precision_ret.update(ret)
+        benchmark.show_result(success_ret, precision_ret,
+                show_video_level=args.show_video_level)
 
 
 if __name__ == '__main__':
