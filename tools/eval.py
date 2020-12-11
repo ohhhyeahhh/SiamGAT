@@ -13,16 +13,14 @@ from toolkit.datasets import OTBDataset, UAVDataset, LaSOTDataset
 from toolkit.evaluation.ope_benchmark import OPEBenchmark
 
 parser = argparse.ArgumentParser(description='tracking evaluation')
-#'/home/amax/PycharmProjects/results_of_ohhhyeahhh/resultsOfROIround',#'./results',
-#'/run/user/1000/gvfs/smb-share:server=ohhhyeahhh.local,share=数据集/eval_results',
-#'/home/amax/PycharmProjects/ohhhyeahhh/tools/hp_search_results',
-parser.add_argument('--tracker_path', '-p', type=str, default='./results',#'/home/amax/PycharmProjects/results_of_ohhhyeahhh/resultsOfROIint',
+
+parser.add_argument('--tracker_path', '-p', type=str, default='./results',
                     help='tracker result path')
 parser.add_argument('--dataset', '-d', type=str, default='UAV123',
                     help='dataset name')
 parser.add_argument('--num', '-n', default=1, type=int,
                     help='number of thread to eval')
-parser.add_argument('--tracker_prefix', '-t', default='model_9_',
+parser.add_argument('--tracker_prefix', '-t', default='',
                     type=str, help='tracker name')
 parser.add_argument('--show_video_level', '-s', dest='show_video_level',
                     action='store_true')
@@ -40,11 +38,8 @@ def main():
     assert len(trackers) > 0
     args.num = min(args.num, len(trackers))
 
-    # root = os.path.realpath(os.path.join(os.path.dirname(__file__),
-    #                         '../testing_dataset'))
-    root = os.path.join('/data0', args.dataset)
-    if args.dataset == 'LaSOT':
-        root = '/data0/LaSOT/LaSOT_test'
+    root = os.path.realpath(os.path.join(os.path.dirname(__file__),
+                            '../testing_dataset'))
 
     if 'OTB' in args.dataset:
         dataset = OTBDataset(args.dataset, root)
@@ -98,12 +93,6 @@ def main():
                 trackers), desc='eval precision', total=len(trackers), ncols=100):
                 precision_ret.update(ret)
         norm_precision_ret = {}
-        with Pool(processes=args.num) as pool:
-            for ret in tqdm(pool.imap_unordered(benchmark.eval_norm_precision,
-                trackers), desc='eval norm precision', total=len(trackers), ncols=100):
-                norm_precision_ret.update(ret)
-        benchmark.show_result(success_ret, precision_ret, norm_precision_ret,
-                show_video_level=args.show_video_level)
 
 
 if __name__ == '__main__':
