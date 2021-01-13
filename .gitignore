@@ -5,6 +5,7 @@
 *.txt
 !/tools/testTracker.py
 !/tools/eval.py
+!/tools/train.py
 !/tools/snapshot/*.pth
 /toolkit/datasets/trackingnet.py
 /toolkit/datasets/vot.py
