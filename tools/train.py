@@ -28,7 +28,7 @@ from pysot.utils.distributed import dist_init, reduce_gradients,\
 from pysot.utils.model_load import load_pretrain, restore_from
 from pysot.utils.average_meter import AverageMeter
 from pysot.utils.misc import describe, commit
-from pysot.models.model_builder_gat_Test import ModelBuilder
+from pysot.models.model_builder_gat import ModelBuilder
 from pysot.datasets.dataset import TrkDataset
 from pysot.core.config import cfg
 

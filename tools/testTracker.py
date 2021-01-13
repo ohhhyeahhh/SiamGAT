@@ -21,7 +21,7 @@ sys.path.append(base_dir)
 from pysot.core.config import cfg
 from pysot.utils.bbox import get_axis_aligned_bbox
 from pysot.utils.model_load import load_pretrain
-from pysot.models.model_builder_gat_Test import ModelBuilder
+from pysot.models.model_builder_gat import ModelBuilder
 from toolkit.datasets import DatasetFactory
 from pysot.tracker.siamgat_tracker import SiamGATTracker
 
