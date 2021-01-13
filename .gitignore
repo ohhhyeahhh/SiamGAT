@@ -1,5 +1,4 @@
 /.idea
-/experimentsTest/
 /pysot/core/configTest.py
 /tools/*
 *.txt
@@ -9,7 +8,8 @@
 !/tools/snapshot/*.pth
 /toolkit/datasets/trackingnet.py
 /toolkit/datasets/vot.py
-pretrained_models/*.pth
+
+*.pth
 !/pysot/models/loss_car.py
 !/pysot/models/init_weight.py
 /pysot/models/model_builder_gat_Test.py
