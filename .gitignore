@@ -10,8 +10,7 @@
 /toolkit/datasets/vot.py
 !/pretrained_models
 *.pth
-!/pysot/models/loss_car.py
-!/pysot/models/init_weight.py
 /pysot/models/model_builder_gat_Test.py
 /pysot/tracker/siamgat_tracker_upmis.py
 /setup.py
+!requirement.txt
