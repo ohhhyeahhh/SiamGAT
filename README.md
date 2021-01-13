@@ -35,7 +35,7 @@ Download the datasets：
 * [GOT-10K](http://got-10k.aitestunion.com/downloads)
 * [LaSOT](https://cis.temple.edu/lasot/)
 
-**Note:** `train_dataset/dataset_name/readme.md` has listed detailed operations about how to generate training datasets.
+**Note:** `training_dataset/dataset_name/readme.md` has listed detailed operations about how to generate training datasets.
 
 ### Download pretrained backbones
 Download pretrained backbones from [link](https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth) and put them into `pretrained_models` directory.
