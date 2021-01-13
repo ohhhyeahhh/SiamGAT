@@ -8,7 +8,7 @@
 !/tools/snapshot/*.pth
 /toolkit/datasets/trackingnet.py
 /toolkit/datasets/vot.py
-
+!/pretrained_models
 *.pth
 !/pysot/models/loss_car.py
 !/pysot/models/init_weight.py
