@@ -97,10 +97,6 @@ def build_opt_lr(model, current_epoch=0):
                                            model.backbone.parameters()),
                           'lr': cfg.BACKBONE.LAYERS_LR * cfg.TRAIN.BASE_LR}]
 
-    if cfg.ADJUST.ADJUST:
-        trainable_params += [{'params': model.neck.parameters(),
-                              'lr': cfg.TRAIN.BASE_LR}]
-
     trainable_params += [{'params': model.car_head.parameters(),
                            'lr': cfg.TRAIN.BASE_LR}]
 
