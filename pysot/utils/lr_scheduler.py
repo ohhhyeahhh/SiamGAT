@@ -10,7 +10,7 @@ import math
 import numpy as np
 from torch.optim.lr_scheduler import _LRScheduler
 
-from pysot.core.config import cfg
+from pysot.core.configTest import cfg
 
 
 class LRScheduler(_LRScheduler):

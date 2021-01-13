@@ -9,7 +9,7 @@ import cv2
 import numpy as np
 import torch
 
-from pysot.core.config import cfg
+from pysot.core.configTest import cfg
 
 
 class BaseTracker(object):

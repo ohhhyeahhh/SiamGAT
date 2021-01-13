@@ -10,7 +10,7 @@ import torch.nn.functional as F
 import torch
 import cv2
 
-from pysot.core.config import cfg
+from pysot.core.configTest import cfg
 from pysot.tracker.base_tracker import SiameseTracker
 from pysot.utils.misc import bbox_clip
 

@@ -1,6 +1,6 @@
 /.idea
-/experimentsWITHtrain/
-/pysot/core/configWITHtrain.py
+/experimentsTest/
+/pysot/core/configTest.py
 /tools/*
 *.txt
 !/tools/testTracker.py
@@ -9,8 +9,8 @@
 /toolkit/datasets/trackingnet.py
 /toolkit/datasets/vot.py
 pretrained_models/*.pth
-/pysot/models/loss_car.py
-/pysot/models/init_weight.py
-/pysot/models/model_builder_gat_withtrain.py
+!/pysot/models/loss_car.py
+!/pysot/models/init_weight.py
+/pysot/models/model_builder_gat_Test.py
 /pysot/tracker/siamgat_tracker_upmis.py
 /setup.py
