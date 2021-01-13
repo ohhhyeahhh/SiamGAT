@@ -276,7 +276,6 @@ def main():
         logger.info("config \n{}".format(json.dumps(cfg, indent=4)))
 
     # create model
-    # model = ModelBuilder().cuda().train()
     model = ModelBuilder().train()
     dist_model = nn.DataParallel(model).cuda()
 
@@ -296,8 +295,6 @@ def main():
     train_loader = build_data_loader()
 
     # build optimizer and lr_scheduler
-    # optimizer, lr_scheduler = build_opt_lr(model,
-    #                                        cfg.TRAIN.START_EPOCH)
     optimizer, lr_scheduler = build_opt_lr(dist_model.module,
                                            cfg.TRAIN.START_EPOCH)
 
