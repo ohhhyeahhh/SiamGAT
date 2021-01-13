@@ -18,7 +18,7 @@ sys.path.append('../')
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(base_dir)
 
-from pysot.core.configTest import cfg
+from pysot.core.config import cfg
 from pysot.utils.bbox import get_axis_aligned_bbox
 from pysot.utils.model_load import load_pretrain
 from pysot.models.model_builder_gat_Test import ModelBuilder

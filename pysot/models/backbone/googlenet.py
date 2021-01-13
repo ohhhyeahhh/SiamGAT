@@ -3,7 +3,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from pysot.core.configTest import cfg
+from pysot.core.config import cfg
 
 
 class Inception3(nn.Module):

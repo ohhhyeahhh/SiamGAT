@@ -30,7 +30,7 @@ from pysot.utils.average_meter import AverageMeter
 from pysot.utils.misc import describe, commit
 from pysot.models.model_builder_gat_Test import ModelBuilder
 from pysot.datasets.dataset import TrkDataset
-from pysot.core.configTest import cfg
+from pysot.core.config import cfg
 
 
 logger = logging.getLogger('global')

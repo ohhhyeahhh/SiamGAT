@@ -9,7 +9,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from pysot.core.configTest import cfg
+from pysot.core.config import cfg
 from pysot.models.loss_car import make_siamcar_loss_evaluator
 from pysot.models.backbone import get_backbone
 from pysot.models.head.car_head import CARHead

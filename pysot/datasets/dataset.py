@@ -18,7 +18,7 @@ from torch.utils.data import Dataset
 
 from pysot.utils.bbox import center2corner, Center
 from pysot.datasets.augmentation import Augmentation
-from pysot.core.configTest import cfg
+from pysot.core.config import cfg
 
 logger = logging.getLogger("global")
 
