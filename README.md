@@ -59,3 +59,22 @@ python eval.py 	                          \
 
 ## 5. Acknowledgement
 The code is implemented based on [pysot](https://github.com/STVIR/pysot) and [SiamCAR](https://github.com/ohhhyeahhh/SiamCAR). We would like to express our sincere thanks to the contributors.
+
+## 6. Cite
+If you use SiamGAT in your work please cite our papers:
+
+> @InProceedings{Guo_2021_CVPR,  
+  author = {Guo, Dongyan and Shao, Yanyan and Cui, Ying and Wang, Zhenhua and Zhang, Liyan and Shen, Chunhua},  
+  title = {Graph Attention Tracking},  
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},  
+  month = {June},  
+  year = {2021}  
+}
+
+> @InProceedings{Guo_2020_CVPR,  
+   author = {Guo, Dongyan and Wang, Jun and Cui, Ying and Wang, Zhenhua and Chen, Shengyong},  
+   title = {SiamCAR: Siamese Fully Convolutional Classification and Regression for Visual Tracking},  
+   booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},  
+   month = {June},  
+   year = {2020}  
+}
