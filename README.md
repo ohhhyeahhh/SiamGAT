@@ -44,6 +44,7 @@ Download the datasets：
 * [COCO](http://cocodataset.org)
 * [GOT-10K](http://got-10k.aitestunion.com/downloads)
 * [LaSOT](https://cis.temple.edu/lasot/)
+* [TrackingNet](https://tracking-net.org/#downloads)
 
 **Note:** `training_dataset/dataset_name/readme.md` has listed detailed operations about how to generate training datasets.
 
