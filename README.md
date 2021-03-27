@@ -59,7 +59,8 @@ python train.py
 ```
 
 ## 4. Evaluation
-We provide the tracking [results](https://pan.baidu.com/s/1Ohit3C_hdy70x-JrdGUfeg) (extract code: 0wod) ([results in Google driver](https://drive.google.com/file/d/1GBk_eKOMxo3rdTrmZYzDaG-Nc_j2Cdg6/view?usp=sharing)) of GOT-10k, LaSOT, OTB100 and UAV123. TrackingNet results can be obtained from [BaiduYun](https://pan.baidu.com/s/1cJkTbhO73KaIfBzFHkonNg) (extract code: iwlj).If you want to evaluate the tracker, please put those results into  `results` directory.
+We provide the tracking [results](https://pan.baidu.com/s/1Ohit3C_hdy70x-JrdGUfeg) (extract code: 0wod) ([results in Google driver](https://drive.google.com/file/d/1GBk_eKOMxo3rdTrmZYzDaG-Nc_j2Cdg6/view?usp=sharing)) of GOT-10k, LaSOT, OTB100 and UAV123. If you want to evaluate the tracker on OTB100, UAV123 and LaSOT, please put those results into  `results` directory. Evaluate GOT-10k on [Server](http://got-10k.aitestunion.com/).   
+Get TrackingNet results from [BaiduYun](https://pan.baidu.com/s/1cJkTbhO73KaIfBzFHkonNg) (extract code: iwlj), and evaluate it on [Server](http://eval.tracking-net.org/).
 ```
 python eval.py 	                          \
 	--tracker_path ./results          \ # result path
