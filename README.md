@@ -23,7 +23,7 @@ From Google Driver:
 
 Download testing datasets and put them into `test_dataset` directory. Jsons of commonly used datasets can be downloaded from [BaiduYun](https://pan.baidu.com/s/1js0Qhykqqur7_lNRtle1tA#list/path=%2F). If you want to test the tracker on a new dataset, please refer to [pysot-toolkit](https://github.com/StrangerZhang/pysot-toolkit) to set test_dataset.
 
-The tracking results can be download from [BaiduYun](https://pan.baidu.com/s/1Ohit3C_hdy70x-JrdGUfeg) (extract code: 0wod) or [GoogleDriver](https://drive.google.com/file/d/1GBk_eKOMxo3rdTrmZYzDaG-Nc_j2Cdg6/view?usp=sharing) for comparision.
+The tracking result can be download from [BaiduYun](https://pan.baidu.com/s/1Ohit3C_hdy70x-JrdGUfeg) (extract code: 0wod) or [GoogleDriver](https://drive.google.com/file/d/1GBk_eKOMxo3rdTrmZYzDaG-Nc_j2Cdg6/view?usp=sharing) for comparision.
 
 ```bash 
 python testTracker.py \    
