@@ -13,6 +13,7 @@ From BaiduYun:
 * [otb_uav_model](https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA) extract code: w1rs  
 * [got10k_model](https://pan.baidu.com/s/1LcKRO4t3vqGs8r7Lb73lmA) extract code: n91w  
 * [lasot_model](https://pan.baidu.com/s/17-pG-Mytg4sT330mhd584A) extract code: dilp  
+* [TrackingNet_model](https://pan.baidu.com/s/1Zst1o1cg_zK9YqN3meJ7Bw) extract code: n2sm  
   
 From Google Driver:
 * [otb_uav_model](https://drive.google.com/file/d/1LKU6DuOzmLGJr-LYm4yXciJwIizbV_Zf/view?usp=sharing)
@@ -58,7 +59,7 @@ python train.py
 ```
 
 ## 4. Evaluation
-We provide the tracking [results](https://pan.baidu.com/s/1Ohit3C_hdy70x-JrdGUfeg) (extract code: 0wod) ([results in Google driver](https://drive.google.com/file/d/1GBk_eKOMxo3rdTrmZYzDaG-Nc_j2Cdg6/view?usp=sharing)) of GOT-10k, LaSOT, OTB100 and UAV123. If you want to evaluate the tracker, please put those results into  `results` directory.
+We provide the tracking [results](https://pan.baidu.com/s/1Ohit3C_hdy70x-JrdGUfeg) (extract code: 0wod) ([results in Google driver](https://drive.google.com/file/d/1GBk_eKOMxo3rdTrmZYzDaG-Nc_j2Cdg6/view?usp=sharing)) of GOT-10k, LaSOT, OTB100 and UAV123. TrackingNet results can be obtained from [BaiduYun](https://pan.baidu.com/s/1cJkTbhO73KaIfBzFHkonNg) (extract code: iwlj).If you want to evaluate the tracker, please put those results into  `results` directory.
 ```
 python eval.py 	                          \
 	--tracker_path ./results          \ # result path
