@@ -123,7 +123,7 @@ __C.DATASET.NEG = 0.0
 
 __C.DATASET.GRAY = 0.0
 
-__C.DATASET.NAMES = ('VID', 'COCO', 'DET', 'YOUTUBEBB', 'GOT', 'LaSOT')
+__C.DATASET.NAMES = ('VID', 'COCO', 'DET', 'YOUTUBEBB', 'GOT', 'LaSOT', 'TrackingNet')
 
 __C.DATASET.VID = CN()
 __C.DATASET.VID.ROOT = '/PATH/TO/VID'
@@ -160,6 +160,12 @@ __C.DATASET.LaSOT.ROOT = '/PATH/TO/LaSOT'
 __C.DATASET.LaSOT.ANNO = 'training_dataset/lasot/train.json'
 __C.DATASET.LaSOT.FRAME_RANGE = 100
 __C.DATASET.LaSOT.NUM_USE = 200000
+
+__C.DATASET.TrackingNet = CN()
+__C.DATASET.TrackingNet.ROOT = '/PATH/TO/TrackingNet'
+__C.DATASET.TrackingNet.ANNO = 'training_dataset/trackingnet/train.json'
+__C.DATASET.TrackingNet.FRAME_RANGE = 100
+__C.DATASET.TrackingNet.NUM_USE = 200000
 
 __C.DATASET.VIDEOS_PER_EPOCH = 800000
 
