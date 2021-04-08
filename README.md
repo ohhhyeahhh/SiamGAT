@@ -8,6 +8,33 @@ pip install -r requirements.txt
 ```
 
 ## 2. Test
+
+<table>
+   <tr>
+      <td rowspan="2" align=center>Dataset</td>
+      <td align=center>GOT-10k</td>
+      <td align=center>OTB100</td>
+      <td align=center>UAV123</td>
+      <td align=center>LaSOT</td>
+      <td align=center>TrackingNet</td>
+   </tr>
+   <tr>
+      <td align=center>AO(%)</td>
+      <td align=center>AUC(%)</td>
+      <td align=center>AUC(%)</td>
+      <td align=center>AUC(%)</td>
+      <td align=center>AUC(%)</td>
+   </tr>
+   <tr>
+      <td align=center>SiamGAT</td>
+      <td align=center>62.7</td>
+      <td align=center>71.0</td>
+      <td align=center>64.6</td>
+      <td align=center>53.8</td>
+      <td align=center>75.3</td>
+   </tr>
+</table>
+
 Download the pretrained model and put them into `tools/snapshot` directory.   
 From BaiduYun:
 * [otb_uav_model](https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA) extract code: w1rs  
