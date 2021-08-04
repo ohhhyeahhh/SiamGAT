@@ -11,16 +11,16 @@ pip install -r requirements.txt
 
 <table>
     <tr>
-        <td colspan="2" align=center> DATASET NAME</td>
+        <td colspan="2" align=center> Dataset</td>
         <td>SiamGAT</td>
-        <td>model link</td>
+        <td>Model Link</td>
     </tr>
     <tr>
         <td rowspan="2" align=center>OTB100</td>
         <td>Success</td>
         <td>0.71</td>
         <td rowspan="4" align=center>
-			<a href="https://drive.google.com/file/d/1LKU6DuOzmLGJr-LYm4yXciJwIizbV_Zf/view?usp=sharing">Google Driver</a><br>
+			<a href="https://drive.google.com/file/d/1LKU6DuOzmLGJr-LYm4yXciJwIizbV_Zf/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA">BaiduYun</a>(w1rs)
 		</td>
     </tr>
@@ -42,7 +42,7 @@ pip install -r requirements.txt
         <td>Success</td>
         <td>0.539</td>
         <td rowspan="3" align=center>
-			<a href="https://drive.google.com/file/d/167ANy1557rcIsAjuH6_bSS_OFEvgG93s/view?usp=sharing">Google Driver</a><br>
+			<a href="https://drive.google.com/file/d/167ANy1557rcIsAjuH6_bSS_OFEvgG93s/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/17-pG-Mytg4sT330mhd584A">BaiduYun</a>(dilp)
 		</td>
     </tr>
@@ -59,7 +59,7 @@ pip install -r requirements.txt
         <td>AO</td>
         <td>0.627</td>
         <td rowspan="3" align=center>
-			<a href="https://drive.google.com/file/d/1f0wZXMnzIOIWTTtL7D_Z7N42FAzY8sDi/view?usp=sharing">Google Driver</a><br>
+			<a href="https://drive.google.com/file/d/1f0wZXMnzIOIWTTtL7D_Z7N42FAzY8sDi/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1LcKRO4t3vqGs8r7Lb73lmA">BaiduYun</a>(n91w)
 		</td>
     </tr>
