@@ -10,29 +10,72 @@ pip install -r requirements.txt
 ## 2. Test
 
 <table>
-   <tr>
-      <td rowspan="2" align=center>Dataset</td>
-      <td align=center>GOT-10k</td>
-      <td align=center>OTB100</td>
-      <td align=center>UAV123</td>
-      <td align=center>LaSOT</td>
-      <td align=center>TrackingNet</td>
-   </tr>
-   <tr>
-      <td align=center>AO(%)</td>
-      <td align=center>AUC(%)</td>
-      <td align=center>AUC(%)</td>
-      <td align=center>AUC(%)</td>
-      <td align=center>AUC(%)</td>
-   </tr>
-   <tr>
-      <td align=center>SiamGAT</td>
-      <td align=center>62.7</td>
-      <td align=center>71.0</td>
-      <td align=center>64.6</td>
-      <td align=center>53.8</td>
-      <td align=center>75.3</td>
-   </tr>
+    <tr>
+        <td colspan="2" align=center> DATASET NAME</td>
+        <td>SiamGAT</td>
+        <td>model link</td>
+    </tr>
+    <tr>
+        <td rowspan="2" align=center>OTB100</td>
+        <td>Success</td>
+        <td>0.71</td>
+        <td rowspan="4" align=center>^?^</td>
+    </tr>
+    <tr>
+        <td>Precision</td>
+        <td>0.917</td>
+    </tr>
+    <tr>
+        <td rowspan="2" align=center>UAV123</td>
+        <td>Success</td>
+        <td>0.646</td>
+    </tr>
+    <tr>
+        <td>Precision</td>
+        <td>0.843</td>
+    </tr>
+    <tr>
+        <td rowspan="3" align=center>LaSOT</td>
+        <td>Success</td>
+        <td>0.539</td>
+        <td rowspan="3" align=center>^-^</td>
+    </tr>
+    <tr>
+        <td>Norm precision</td>
+        <td>0.633</td>
+    </tr>
+    <tr>
+        <td>Precision</td>
+        <td>0.53</td>
+    </tr>
+    <tr>
+        <td rowspan="3" align=center>GOT10k</td>
+        <td>AO</td>
+        <td>0.627</td>
+        <td rowspan="3" align=center>*-*</td>
+    </tr>
+    <tr>
+        <td>SR0.5</td>
+        <td>0.743</td>
+    </tr>
+    <tr>
+        <td>SR0.75</td>
+        <td>0.488</td>
+    </tr>
+    <tr>
+        <td rowspan="3" align=center>TrackingNet</td>
+        <td>Success</td>
+        <td>75.26</td>
+        <td rowspan="3" align=center>@_@</td>
+    </tr>
+    <tr>
+        <td>Norm precision</td>
+        <td>80.65</td>
+    </tr>
+    <tr>
+        <td>Precision</td>
+        <td>69.74</td>
+    </tr>
 </table>
 
 Download the pretrained model and put them into `tools/snapshot` directory.   
