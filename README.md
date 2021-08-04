@@ -19,7 +19,10 @@ pip install -r requirements.txt
         <td rowspan="2" align=center>OTB100</td>
         <td>Success</td>
         <td>0.71</td>
-        <td rowspan="4" align=center>:grimacing:</td>
+        <td rowspan="4" align=center>
+			<a src="https://drive.google.com/file/d/1LKU6DuOzmLGJr-LYm4yXciJwIizbV_Zf/view?usp=sharing">Google Driver</a><br>
+			<a src="https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA">BaiduYun</a>(w1rs)
+		</td>
     </tr>
     <tr>
         <td>Precision</td>
@@ -38,7 +41,10 @@ pip install -r requirements.txt
         <td rowspan="3" align=center>LaSOT</td>
         <td>Success</td>
         <td>0.539</td>
-        <td rowspan="3" align=center>:sleepy:</td>
+        <td rowspan="3" align=center>
+			<a src="https://drive.google.com/file/d/167ANy1557rcIsAjuH6_bSS_OFEvgG93s/view?usp=sharing">Google Driver</a><br>
+			<a src="https://pan.baidu.com/s/17-pG-Mytg4sT330mhd584A">BaiduYun</a>(dilp)
+		</td>
     </tr>
     <tr>
         <td>Norm precision</td>
@@ -52,7 +58,10 @@ pip install -r requirements.txt
         <td rowspan="3" align=center>GOT10k</td>
         <td>AO</td>
         <td>0.627</td>
-        <td rowspan="3" align=center>*-*</td>
+        <td rowspan="3" align=center>
+			<a src="https://drive.google.com/file/d/1f0wZXMnzIOIWTTtL7D_Z7N42FAzY8sDi/view?usp=sharing">Google Driver</a><br>
+			<a src="https://pan.baidu.com/s/1LcKRO4t3vqGs8r7Lb73lmA">BaiduYun</a>(n91w)
+		</td>
     </tr>
     <tr>
         <td>SR0.5</td>
@@ -66,7 +75,9 @@ pip install -r requirements.txt
         <td rowspan="3" align=center>TrackingNet</td>
         <td>Success</td>
         <td>75.26</td>
-        <td rowspan="3" align=center>@_@</td>
+        <td rowspan="3" align=center>
+			<a src="https://pan.baidu.com/s/1Zst1o1cg_zK9YqN3meJ7Bw">BaiduYun</a>(n2sm)
+		</td>
     </tr>
     <tr>
         <td>Norm precision</td>
@@ -77,19 +88,6 @@ pip install -r requirements.txt
         <td>69.74</td>
     </tr>
 </table>
-
-Download the pretrained model and put them into `tools/snapshot` directory.   
-From BaiduYun:
-* [otb_uav_model](https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA) extract code: w1rs  
-* [got10k_model](https://pan.baidu.com/s/1LcKRO4t3vqGs8r7Lb73lmA) extract code: n91w  
-* [lasot_model](https://pan.baidu.com/s/17-pG-Mytg4sT330mhd584A) extract code: dilp  
-* [TrackingNet_model](https://pan.baidu.com/s/1Zst1o1cg_zK9YqN3meJ7Bw) extract code: n2sm  
-  
-From Google Driver:
-* [otb_uav_model](https://drive.google.com/file/d/1LKU6DuOzmLGJr-LYm4yXciJwIizbV_Zf/view?usp=sharing)
-* [got10k_model](https://drive.google.com/file/d/1f0wZXMnzIOIWTTtL7D_Z7N42FAzY8sDi/view?usp=sharing)
-* [lasot_model](https://drive.google.com/file/d/167ANy1557rcIsAjuH6_bSS_OFEvgG93s/view?usp=sharing)
-
 
 Download testing datasets and put them into `test_dataset` directory. Jsons of commonly used datasets can be downloaded from [BaiduYun](https://pan.baidu.com/s/1js0Qhykqqur7_lNRtle1tA#list/path=%2F). If you want to test the tracker on a new dataset, please refer to [pysot-toolkit](https://github.com/StrangerZhang/pysot-toolkit) to set test_dataset.
 
