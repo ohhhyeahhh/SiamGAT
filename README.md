@@ -12,8 +12,8 @@ pip install -r requirements.txt
 <table>
     <tr>
         <td colspan="2" align=center> Dataset</td>
-        <td>SiamGAT</td>
-        <td>Model Link</td>
+        <td align=center>SiamGAT</td>
+        <td align=center>Model Link</td>
     </tr>
     <tr>
         <td rowspan="2" align=center>OTB100</td>
