@@ -19,7 +19,7 @@ pip install -r requirements.txt
         <td rowspan="2" align=center>OTB100</td>
         <td>Success</td>
         <td>0.71</td>
-        <td rowspan="4" align=center>^?^</td>
+        <td rowspan="4" align=center>:grimacing:</td>
     </tr>
     <tr>
         <td>Precision</td>
@@ -38,7 +38,7 @@ pip install -r requirements.txt
         <td rowspan="3" align=center>LaSOT</td>
         <td>Success</td>
         <td>0.539</td>
-        <td rowspan="3" align=center>^-^</td>
+        <td rowspan="3" align=center>:sleepy:</td>
     </tr>
     <tr>
         <td>Norm precision</td>
