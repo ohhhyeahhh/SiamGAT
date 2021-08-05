@@ -18,7 +18,7 @@ pip install -r requirements.txt
     <tr>
         <td rowspan="2" align=center>OTB100</td>
         <td>Success</td>
-        <td>0.71</td>
+        <td>0.710</td>
         <td rowspan="4" align=center>
 			<a href="https://drive.google.com/file/d/1LKU6DuOzmLGJr-LYm4yXciJwIizbV_Zf/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA">BaiduYun</a>(w1rs)
@@ -52,7 +52,7 @@ pip install -r requirements.txt
     </tr>
     <tr>
         <td>Precision</td>
-        <td>0.53</td>
+        <td>0.530</td>
     </tr>
     <tr>
         <td rowspan="3" align=center>GOT10k</td>
