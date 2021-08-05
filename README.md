@@ -57,25 +57,26 @@ pip install -r requirements.txt
     <tr>
         <td rowspan="3" align=center>GOT10k</td>
         <td>AO</td>
-        <td>0.627</td>
+        <td>0.631</td>
         <td rowspan="3" align=center>
-			<a href="https://drive.google.com/file/d/1f0wZXMnzIOIWTTtL7D_Z7N42FAzY8sDi/view?usp=sharing">Google Driver</a>/<br>
-			<a href="https://pan.baidu.com/s/1LcKRO4t3vqGs8r7Lb73lmA">BaiduYun</a>(n91w)
+			<a href="https://drive.google.com/file/d/1g4ETsJF_jtvpn0-6XF0VGxCtg67-EFmc/view?usp=sharing">Google Driver</a>/<br>
+			<a href="https://pan.baidu.com/s/1wap-r-57Rl9NGndiSNAfHw">BaiduYun</a>(zktx)
 		</td>
     </tr>
     <tr>
         <td>SR0.5</td>
-        <td>0.743</td>
+        <td>0.746</td>
     </tr>
     <tr>
         <td>SR0.75</td>
-        <td>0.488</td>
+        <td>0.504</td>
     </tr>
     <tr>
         <td rowspan="3" align=center>TrackingNet</td>
         <td>Success</td>
         <td>75.26</td>
         <td rowspan="3" align=center>
+			<a href="https://drive.google.com/file/d/1D2FSYDepz8LU0D3ZsWPYdEIVpNItgHwl/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1Zst1o1cg_zK9YqN3meJ7Bw">BaiduYun</a>(n2sm)
 		</td>
     </tr>
