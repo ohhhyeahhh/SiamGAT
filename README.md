@@ -145,6 +145,15 @@ The code is implemented based on [pysot](https://github.com/STVIR/pysot) and [Si
 ## 6. Cite
 If you use SiamGAT in your work please cite our papers:
 
+> @article{cui2022joint,  
+	title={Joint Classification and Regression for Visual Tracking with Fully Convolutional Siamese Networks},  
+	author={Cui, Ying and Guo, Dongyan and Shao, Yanyan and Wang, Zhenhua and Shen, Chunhua and Zhang, Liyan and Chen, Shengyong},  
+	journal={International Journal of Computer Vision},  
+	year={2022},  
+	publisher={Springer},  
+	doi = {10.1007/s11263-021-01559-4}  
+}
+
 > @InProceedings{Guo_2021_CVPR,  
   author = {Guo, Dongyan and Shao, Yanyan and Cui, Ying and Wang, Zhenhua and Zhang, Liyan and Shen, Chunhua},  
   title = {Graph Attention Tracking},  
