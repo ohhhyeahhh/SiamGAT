@@ -126,7 +126,7 @@ Download testing datasets and put them into `test_dataset` directory. Jsons of c
 ```bash 
 python testTracker.py \    
         --config ../experiments/siamgat_googlenet_ct_alldataset/config.yaml \ # siamgat_xx_xx for SiamGAT, siamgat_ct_xx_xx for SiamGAT*
-	--dataset OTB100 \                                 # dataset_name： GOT-10k, LaSOT, TrackingNet, OTB100, UAV123
+	--dataset OTB100 \                                 # dataset_name: GOT-10k, LaSOT, TrackingNet, OTB100, UAV123
 	--snapshot snapshot/otb_uav_model.pth              # tracker_name
 ```
 The testing result will be saved in the `results/dataset_name/tracker_name` directory.
@@ -155,7 +155,7 @@ To train the SiamGAT model, run `train.py` with the desired configs:
 ```bash
 cd tools
 python train.py
-    --cfg ../experiments/siamgat_googlenet/config.yaml # siamgat_xx_xx for SiamGAT, siamgat_ct_xx_xx for SiamGAT*
+	--cfg ../experiments/siamgat_googlenet/config.yaml # siamgat_xx_xx for SiamGAT, siamgat_ct_xx_xx for SiamGAT*
 ```
 
 ## 4. Evaluation
@@ -170,7 +170,7 @@ Evaluate GOT-10k on [Server](http://got-10k.aitestunion.com/). Evaluate Tracking
 ```
 python eval.py 	                          \
 	--tracker_path ./results          \ # result path
-	--dataset UAV123                  \ # dataset_name
+	--dataset OTB100                  \ # dataset_name
 	--tracker_prefix 'otb_uav_model'   # tracker_name
 ```
 
