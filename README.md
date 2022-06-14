@@ -9,8 +9,7 @@ pip install -r requirements.txt
 
 ## 2. Test
 
-<table>
-    <tr>
+<table>    <tr>
         <td colspan="2" align=center> Dataset</td>
         <td align=center>SiamGAT</td>
         <td align=center>SiamGAT*</td>
@@ -50,7 +49,6 @@ pip install -r requirements.txt
         <td>Precision</td>
         <td>69.8</td> <td>71.9</td>
     </tr>
-
     <tr>
         <td rowspan="2" align=center>OTB100</td>
         <td>Success</td>
