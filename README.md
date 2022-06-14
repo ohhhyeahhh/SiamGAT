@@ -75,7 +75,6 @@ pip install -r requirements.txt
     <tr>
         <td>Precision</td>
         <td>53.0</td> <td> 61.2 </td>
-        <td rowspan="2" align=center> - </td>
     </tr>
     <tr>
         <td rowspan="2" align=center>OTB100</td>
