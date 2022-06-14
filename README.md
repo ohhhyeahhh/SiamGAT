@@ -46,7 +46,7 @@ pip install -r requirements.txt
 			<a href="https://drive.google.com/file/d/1D2FSYDepz8LU0D3ZsWPYdEIVpNItgHwl/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1Zst1o1cg_zK9YqN3meJ7Bw">BaiduYun</a>(n2sm)
 		</td>
-        <td rowspan="3" align=center>
+        <td rowspan="6" align=center>
 			<a href="https://drive.google.com/file/d/1WgZwzKzxz_qgFke8kY4UspCdXjHYxIPG/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1WyuNhoyqJqBEzDdbMVFrRA">BaiduYun</a>(fxo2)
 		</td>
@@ -66,10 +66,6 @@ pip install -r requirements.txt
         <td rowspan="3" align=center>
 			<a href="https://drive.google.com/file/d/167ANy1557rcIsAjuH6_bSS_OFEvgG93s/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/17-pG-Mytg4sT330mhd584A">BaiduYun</a>(dilp)
-		</td>
-        <td rowspan="3" align=center>
-			<a href="https://drive.google.com/file/d/1WgZwzKzxz_qgFke8kY4UspCdXjHYxIPG/view?usp=sharing">Google Driver</a>/<br>
-			<a href="https://pan.baidu.com/s/1WyuNhoyqJqBEzDdbMVFrRA">BaiduYun</a>(fxo2)
 		</td>
     </tr>
     <tr>
