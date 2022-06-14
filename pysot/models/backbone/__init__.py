@@ -6,6 +6,7 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 from pysot.models.backbone.googlenet import Inception3
+from pysot.models.backbone.googlenet_ct import Inception3_ct
 from pysot.models.backbone.googlenet_ou import Inception3_ou
 
 BACKBONES = {
@@ -16,6 +17,7 @@ BACKBONES = {
               # 'resnet50': resnet50,
               # 'alexnet': alexnet,
               'googlenet': Inception3,
+              'googlenet_ct': Inception3_ct,
               'googlenet_ou': Inception3_ou,
             }
 

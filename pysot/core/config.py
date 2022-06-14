@@ -141,31 +141,31 @@ __C.DATASET.COCO = CN()
 __C.DATASET.COCO.ROOT = '/PATH/TO/COCO'
 __C.DATASET.COCO.ANNO = 'training_dataset/coco/train2017.json'
 __C.DATASET.COCO.FRAME_RANGE = 1
-__C.DATASET.COCO.NUM_USE = 100000
+__C.DATASET.COCO.NUM_USE = 50000
 
 __C.DATASET.DET = CN()
 __C.DATASET.DET.ROOT = '/PATH/TO/DET'
 __C.DATASET.DET.ANNO = 'training_dataset/det/train.json'
 __C.DATASET.DET.FRAME_RANGE = 1
-__C.DATASET.DET.NUM_USE = 200000
+__C.DATASET.DET.NUM_USE = 50000
 
 __C.DATASET.GOT = CN()
 __C.DATASET.GOT.ROOT = '/PATH/TO/GOT'
 __C.DATASET.GOT.ANNO = 'training_dataset/got10k/train.json'
-__C.DATASET.GOT.FRAME_RANGE = 100
+__C.DATASET.GOT.FRAME_RANGE = 50
 __C.DATASET.GOT.NUM_USE = 200000
 
 __C.DATASET.LaSOT = CN()
 __C.DATASET.LaSOT.ROOT = '/PATH/TO/LaSOT'
 __C.DATASET.LaSOT.ANNO = 'training_dataset/lasot/train.json'
 __C.DATASET.LaSOT.FRAME_RANGE = 100
-__C.DATASET.LaSOT.NUM_USE = 200000
+__C.DATASET.LaSOT.NUM_USE = 150000
 
 __C.DATASET.TrackingNet = CN()
 __C.DATASET.TrackingNet.ROOT = '/PATH/TO/TrackingNet'
 __C.DATASET.TrackingNet.ANNO = 'training_dataset/trackingnet/train.json'
 __C.DATASET.TrackingNet.FRAME_RANGE = 100
-__C.DATASET.TrackingNet.NUM_USE = 200000
+__C.DATASET.TrackingNet.NUM_USE = 350000
 
 __C.DATASET.VIDEOS_PER_EPOCH = 800000
 
@@ -202,6 +202,19 @@ __C.BACKBONE.OFFSET = 13
 
 # Backbone stride
 __C.BACKBONE.STRIDE = 8
+
+# ------------------------------------------------------------------------ #
+# Adjust layer options
+# ------------------------------------------------------------------------ #
+__C.ADJUST = CN()
+
+# Adjust layer
+__C.ADJUST.ADJUST = True
+
+__C.ADJUST.KWARGS = CN(new_allowed=True)
+
+# Adjust layer type
+__C.ADJUST.TYPE = "GoogLeNetAdjustLayer"
 
 # ------------------------------------------------------------------------ #
 # Tracker options
