@@ -11,6 +11,12 @@ pip install -r requirements.txt
 
 <table>
     <tr>
+        <td colspan="2" align=center> Dataset</td>
+        <td align=center>SiamGAT</td>
+        <td align=center>SiamGAT*</td>
+        <td align=center>Model Link</td>
+    </tr>
+    <tr>
         <td rowspan="3" align=center>GOT10k</td>
         <td>AO</td>
         <td>63.1</td> <td>67.1</td>
@@ -44,12 +50,7 @@ pip install -r requirements.txt
         <td>Precision</td>
         <td>69.8</td> <td>71.9</td>
     </tr>
-    <tr>
-        <td colspan="2" align=center> Dataset</td>
-        <td align=center>SiamGAT</td>
-        <td align=center>SiamGAT*</td>
-        <td align=center>Model Link</td>
-    </tr>
+
     <tr>
         <td rowspan="2" align=center>OTB100</td>
         <td>Success</td>
