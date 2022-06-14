@@ -11,53 +11,9 @@ pip install -r requirements.txt
 
 <table>
     <tr>
-        <td colspan="2" align=center> Dataset</td>
-        <td align=center>SiamGAT</td>
-        <td align=center>Model Link</td>
-    </tr>
-    <tr>
-        <td rowspan="2" align=center>OTB100</td>
-        <td>Success</td>
-        <td>71.0</td>
-        <td rowspan="4" align=center>
-			<a href="https://drive.google.com/file/d/1LKU6DuOzmLGJr-LYm4yXciJwIizbV_Zf/view?usp=sharing">Google Driver</a>/<br>
-			<a href="https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA">BaiduYun</a>(w1rs)
-		</td>
-    </tr>
-    <tr>
-        <td>Precision</td>
-        <td>91.7</td>
-    </tr>
-    <tr>
-        <td rowspan="2" align=center>UAV123</td>
-        <td>Success</td>
-        <td>64.6</td>
-    </tr>
-    <tr>
-        <td>Precision</td>
-        <td>84.3</td>
-    </tr>
-    <tr>
-        <td rowspan="3" align=center>LaSOT</td>
-        <td>Success</td>
-        <td>53.9</td>
-        <td rowspan="3" align=center>
-			<a href="https://drive.google.com/file/d/167ANy1557rcIsAjuH6_bSS_OFEvgG93s/view?usp=sharing">Google Driver</a>/<br>
-			<a href="https://pan.baidu.com/s/17-pG-Mytg4sT330mhd584A">BaiduYun</a>(dilp)
-		</td>
-    </tr>
-    <tr>
-        <td>Norm precision</td>
-        <td>63.3</td>
-    </tr>
-    <tr>
-        <td>Precision</td>
-        <td>53.0</td>
-    </tr>
-    <tr>
         <td rowspan="3" align=center>GOT10k</td>
         <td>AO</td>
-        <td>63.1</td>
+        <td>63.1</td> <td>67.1</td>
         <td rowspan="3" align=center>
 			<a href="https://drive.google.com/file/d/1g4ETsJF_jtvpn0-6XF0VGxCtg67-EFmc/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1wap-r-57Rl9NGndiSNAfHw">BaiduYun</a>(zktx)
@@ -65,16 +21,16 @@ pip install -r requirements.txt
     </tr>
     <tr>
         <td>SR0.5</td>
-        <td>74.6</td>
+        <td>74.6</td> <td>78.7</td>
     </tr>
     <tr>
         <td>SR0.75</td>
-        <td>50.4</td>
+        <td>50.4</td> <td>58.9</td>
     </tr>
     <tr>
         <td rowspan="3" align=center>TrackingNet</td>
         <td>Success</td>
-        <td>75.3</td>
+        <td>75.3</td> <td>76.9</td>
         <td rowspan="3" align=center>
 			<a href="https://drive.google.com/file/d/1D2FSYDepz8LU0D3ZsWPYdEIVpNItgHwl/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1Zst1o1cg_zK9YqN3meJ7Bw">BaiduYun</a>(n2sm)
@@ -82,12 +38,58 @@ pip install -r requirements.txt
     </tr>
     <tr>
         <td>Norm precision</td>
-        <td>80.7</td>
+        <td>80.7</td> <td>82.4</td>
     </tr>
     <tr>
         <td>Precision</td>
-        <td>69.8</td>
+        <td>69.8</td> <td>71.9</td>
     </tr>
+    <tr>
+        <td colspan="2" align=center> Dataset</td>
+        <td align=center>SiamGAT</td>
+        <td align=center>SiamGAT*</td>
+        <td align=center>Model Link</td>
+    </tr>
+    <tr>
+        <td rowspan="2" align=center>OTB100</td>
+        <td>Success</td>
+        <td>71.0</td> <td>71.5</td>
+        <td rowspan="4" align=center>
+			<a href="https://drive.google.com/file/d/1LKU6DuOzmLGJr-LYm4yXciJwIizbV_Zf/view?usp=sharing">Google Driver</a>/<br>
+			<a href="https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA">BaiduYun</a>(w1rs)
+		</td>
+    </tr>
+    <tr>
+        <td>Precision</td>
+        <td>91.7</td> <td>93.0</td>
+    </tr>
+    <tr>
+        <td rowspan="2" align=center>UAV123</td>
+        <td>Success</td>
+        <td>64.6</td> <td> - </td>
+    </tr>
+    <tr>
+        <td>Precision</td>
+        <td>84.3</td> <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="3" align=center>LaSOT</td>
+        <td>Success</td>
+        <td>53.9</td> <td> 59.5 </td>
+        <td rowspan="3" align=center>
+			<a href="https://drive.google.com/file/d/167ANy1557rcIsAjuH6_bSS_OFEvgG93s/view?usp=sharing">Google Driver</a>/<br>
+			<a href="https://pan.baidu.com/s/17-pG-Mytg4sT330mhd584A">BaiduYun</a>(dilp)
+		</td>
+    </tr>
+    <tr>
+        <td>Norm precision</td>
+        <td>63.3</td> <td> 69.0 </td>
+    </tr>
+    <tr>
+        <td>Precision</td>
+        <td>53.0</td> <td> 61.2 </td>
+    </tr>
+    
 </table>
 
 
