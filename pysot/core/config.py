@@ -263,8 +263,16 @@ __C.HP_SEARCH = CN()
 
 __C.HP_SEARCH.OTB100 = [0.28, 0.16, 0.4]
 
+# __C.HP_SEARCH.OTB100 = [0.32, 0.3, 0.38]
+
 __C.HP_SEARCH.GOT_10k = [0.7, 0.02, 0.35]
+
+# __C.HP_SEARCH.GOT_10k = [0.9, 0.25, 0.35]
 
 __C.HP_SEARCH.UAV123 = [0.24, 0.04, 0.04]
 
 __C.HP_SEARCH.LaSOT = [0.35, 0.05, 0.18]
+
+# __C.HP_SEARCH.LaSOT = [0.42, 0.05, 0.16]
+
+# __C.HP_SEARCH.TrackingNet = [0.4, 0.05, 0.4]

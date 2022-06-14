@@ -2,6 +2,7 @@ from .otb import OTBDataset
 from .uav import UAVDataset
 from .lasot import LaSOTDataset
 from .got10k import GOT10kDataset
+from .trackingnet import TrackingNetDataset
 
 
 class DatasetFactory(object):
@@ -26,6 +27,8 @@ class DatasetFactory(object):
             dataset = UAVDataset(**kwargs)
         elif 'GOT-10k' == name:
             dataset = GOT10kDataset(**kwargs)
+        elif 'TrackingNet' == name:
+            dataset = TrackingNetDataset(**kwargs)
         else:
             raise Exception("unknow dataset {}".format(kwargs['name']))
         return dataset

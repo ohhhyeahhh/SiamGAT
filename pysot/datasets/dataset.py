@@ -278,6 +278,6 @@ class TrkDataset(Dataset):
                 'neg': neg,
                 'bbox': np.array([bbox.x1,bbox.y1,bbox.x2,bbox.y2]),
                 'target_box': np.array(target_box),
-                 'mask': mask,
+                'mask': mask,
                 }
 
