@@ -26,7 +26,7 @@ pip install -r requirements.txt
 			<a href="https://pan.baidu.com/s/1wap-r-57Rl9NGndiSNAfHw">BaiduYun</a>(zktx)
 		</td>
         <td rowspan="3" align=center>
-			<a href="https://drive.google.com/file/d/19nzlqz9aCswQwnnvc9AS7btAg_uLCTYI/view?usp=sharing">Google Driver</a>/<br>
+			<a href="https://drive.google.com/file/d/1RiHKQzxt6MNJ3urMFI-J5CTaYnHLmuNa/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1P95mpvJGoxJ1KW8EUgfiEQ">BaiduYun</a>(d74o)
 		</td>
     </tr>
@@ -98,7 +98,7 @@ pip install -r requirements.txt
 			<a href="https://drive.google.com/file/d/1LKU6DuOzmLGJr-LYm4yXciJwIizbV_Zf/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA">BaiduYun</a>(w1rs)
 		</td>
-        <td rowspan="4" align=center>
+        <td rowspan="2" align=center>
 			<a href="https://drive.google.com/file/d/1JX7j93R5tQkfxC2NHHUkoIpE2dVGrMe-/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1D_hrPpOPNcFYzaPbAINi_g">BaiduYun</a>(c6c5)
 		</td>
@@ -111,6 +111,7 @@ pip install -r requirements.txt
         <td rowspan="2" align=center>UAV123</td>
         <td>Success</td>
         <td>64.6</td> <td> - </td>
+        <td rowspan="2" align=center>-</td>
     </tr>
     <tr>
         <td>Precision</td>
@@ -118,13 +119,10 @@ pip install -r requirements.txt
     </tr>
 </table>
 
-
+### Prepare testing datasets
 Download testing datasets and put them into `test_dataset` directory. Jsons of commonly used datasets can be downloaded from [BaiduYun](https://pan.baidu.com/s/1js0Qhykqqur7_lNRtle1tA#list/path=%2F). If you want to test the tracker on a new dataset, please refer to [pysot-toolkit](https://github.com/StrangerZhang/pysot-toolkit) to set test_dataset.
 
-- We provide tracking results for comparison: 
-    - SiamGAT: [BaiduYun](https://pan.baidu.com/s/1hPqD9lvYfSAgRiQhgIpHSQ) (extract code: 5o17) or [GoogleDriver](https://drive.google.com/file/d/1lq3EOY5bC64Q_1sgggyrWe_WeCryRXgr/view?usp=sharing).
-    - SiamGAT*: [BaiduYun](https://pan.baidu.com/s/1dWhUxsJyE37d8PfOdqFR_g) (extract code: kjym) or [GoogleDriver](https://drive.google.com/file/d/19nzlqz9aCswQwnnvc9AS7btAg_uLCTYI/view?usp=sharing).
-
+### Test the tracker
 ```bash 
 python testTracker.py \    
         --config ../experiments/siamgat_googlenet_otb_uav/config.yaml \
@@ -132,6 +130,10 @@ python testTracker.py \
 	--snapshot snapshot/otb_uav_model.pth              # tracker_name
 ```
 The testing result will be saved in the `results/dataset_name/tracker_name` directory.
+
+We also provide tracking results for comparison: 
+- SiamGAT: [BaiduYun](https://pan.baidu.com/s/1hPqD9lvYfSAgRiQhgIpHSQ) (extract code: 5o17) or [GoogleDriver](https://drive.google.com/file/d/1lq3EOY5bC64Q_1sgggyrWe_WeCryRXgr/view?usp=sharing).
+- SiamGAT*: [BaiduYun](https://pan.baidu.com/s/1dWhUxsJyE37d8PfOdqFR_g) (extract code: kjym) or [GoogleDriver](https://drive.google.com/file/d/19nzlqz9aCswQwnnvc9AS7btAg_uLCTYI/view?usp=sharing).
 
 ## 3. Train
 
