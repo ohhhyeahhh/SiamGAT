@@ -131,10 +131,6 @@ python testTracker.py \
 ```
 The testing result will be saved in the `results/dataset_name/tracker_name` directory.
 
-We also provide tracking results for comparison: 
-- SiamGAT: [BaiduYun](https://pan.baidu.com/s/1hPqD9lvYfSAgRiQhgIpHSQ) (extract code: 5o17) or [GoogleDriver](https://drive.google.com/file/d/1lq3EOY5bC64Q_1sgggyrWe_WeCryRXgr/view?usp=sharing).
-- SiamGAT*: [BaiduYun](https://pan.baidu.com/s/1dWhUxsJyE37d8PfOdqFR_g) (extract code: kjym) or [GoogleDriver](https://drive.google.com/file/d/19nzlqz9aCswQwnnvc9AS7btAg_uLCTYI/view?usp=sharing).
-
 ## 3. Train
 
 ### Prepare training datasets
@@ -162,8 +158,15 @@ python train.py
 ```
 
 ## 4. Evaluation
-We provide the tracking [results](https://pan.baidu.com/s/1Ohit3C_hdy70x-JrdGUfeg) (extract code: 0wod) ([results in Google driver](https://drive.google.com/file/d/1GBk_eKOMxo3rdTrmZYzDaG-Nc_j2Cdg6/view?usp=sharing)) of GOT-10k, LaSOT, OTB100 and UAV123. If you want to evaluate the tracker on OTB100, UAV123 and LaSOT, please put those results into  `results` directory. Evaluate GOT-10k on [Server](http://got-10k.aitestunion.com/).   
-Get TrackingNet results from [BaiduYun](https://pan.baidu.com/s/1cJkTbhO73KaIfBzFHkonNg) (extract code: iwlj), and evaluate it on [Server](http://eval.tracking-net.org/).
+
+We provide tracking results for comparison: 
+- SiamGAT: [BaiduYun](https://pan.baidu.com/s/1HBE0Kn2ietvQT7NLExAQoA) (extract code: 8nox) or [GoogleDriver](https://drive.google.com/file/d/1xAbTfJNKpGJykdFrTDGtHQtxgKHOhgL7/view?usp=sharing).
+- SiamGAT*: [BaiduYun](https://pan.baidu.com/s/1dWhUxsJyE37d8PfOdqFR_g) (extract code: kjym) or [GoogleDriver](https://drive.google.com/file/d/19nzlqz9aCswQwnnvc9AS7btAg_uLCTYI/view?usp=sharing).
+
+If you want to evaluate the tracker on OTB100, UAV123 and LaSOT, please put those results into `results` directory and then run `eval.py` . 
+Evaluate GOT-10k on [Server](http://got-10k.aitestunion.com/).   
+Evaluate TrackingNet on [Server](https://tracking-net.org/).  
+
 ```
 python eval.py 	                          \
 	--tracker_path ./results          \ # result path
