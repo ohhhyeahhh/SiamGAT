@@ -99,6 +99,9 @@ def build_opt_lr(model, current_epoch=0):
 
     trainable_params += [{'params': model.car_head.parameters(),
                            'lr': cfg.TRAIN.BASE_LR}]
+    if cfg.ADJUST.ADJUST:
+        trainable_params += [{'params': model.neck.parameters(),
+                              'lr': cfg.TRAIN.BASE_LR * cfg.BACKBONE.LAYERS_LR}]
 
     if cfg.TRAIN.ATTENTION:
         trainable_params += [{'params': model.attention.parameters(),
