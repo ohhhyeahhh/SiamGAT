@@ -262,12 +262,12 @@ class TrkDataset(Dataset):
             bbox = Corner(0.0, 0.0, 0.0, 0.0)
 
         cls = np.zeros((cfg.TRAIN.OUTPUT_SIZE, cfg.TRAIN.OUTPUT_SIZE), dtype=np.int64)
-        # offset in the googlenet of the template target is 16
-        # w' = (w - 2 * offset + 1) / stride + 1
-        # target_box = np.array([(template_box[0] - 192), (template_box[1] - 192),
-        #                        (template_box[2] - 192), (template_box[3] - 192)])
-        # target_box = np.array([(template_box[0]-192) // 8, (template_box[1]-192) / 8,
-        #                        (127 - (template_box[2] - 192)) / 8, (127 - (template_box[3] - 192)) / 8]).astype(int)
+
+        # -------------add template mask---------------
+        mask = np.zeros((1, cfg.TRACK.EXEMPLAR_SIZE, cfg.TRACK.EXEMPLAR_SIZE)).astype(np.float32)
+        roi = np.array(target_box, dtype=int)
+        mask[:, max(0, roi[1]): min(roi[3], cfg.TRACK.EXEMPLAR_SIZE),
+            max(0, roi[0]): min(roi[2], cfg.TRACK.EXEMPLAR_SIZE)] = 1
 
         template = template.transpose((2, 0, 1)).astype(np.float32)
         search = search.transpose((2, 0, 1)).astype(np.float32)
@@ -277,6 +277,7 @@ class TrkDataset(Dataset):
                 'label_cls': cls,
                 'neg': neg,
                 'bbox': np.array([bbox.x1,bbox.y1,bbox.x2,bbox.y2]),
-                'target_box': np.array(target_box)
+                'target_box': np.array(target_box),
+                 'mask': mask,
                 }
 
