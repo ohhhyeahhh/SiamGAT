@@ -50,6 +50,15 @@ pip install -r requirements.txt
         <td>69.8</td> <td>71.9</td>
     </tr>
     <tr>
+        <td rowspan="3" align=center>LaSOT</td>
+        <td>Success</td>
+        <td>53.9</td> <td> 59.5 </td>
+        <td rowspan="3" align=center>
+			<a href="https://drive.google.com/file/d/167ANy1557rcIsAjuH6_bSS_OFEvgG93s/view?usp=sharing">Google Driver</a>/<br>
+			<a href="https://pan.baidu.com/s/17-pG-Mytg4sT330mhd584A">BaiduYun</a>(dilp)
+		</td>
+    </tr>
+    <tr>
         <td rowspan="2" align=center>OTB100</td>
         <td>Success</td>
         <td>71.0</td> <td>71.5</td>
@@ -70,15 +79,6 @@ pip install -r requirements.txt
     <tr>
         <td>Precision</td>
         <td>84.3</td> <td> - </td>
-    </tr>
-    <tr>
-        <td rowspan="3" align=center>LaSOT</td>
-        <td>Success</td>
-        <td>53.9</td> <td> 59.5 </td>
-        <td rowspan="3" align=center>
-			<a href="https://drive.google.com/file/d/167ANy1557rcIsAjuH6_bSS_OFEvgG93s/view?usp=sharing">Google Driver</a>/<br>
-			<a href="https://pan.baidu.com/s/17-pG-Mytg4sT330mhd584A">BaiduYun</a>(dilp)
-		</td>
     </tr>
     <tr>
         <td>Norm precision</td>
