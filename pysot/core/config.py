@@ -273,6 +273,6 @@ __C.HP_SEARCH.UAV123 = [0.24, 0.04, 0.04]
 
 __C.HP_SEARCH.LaSOT = [0.35, 0.05, 0.18]
 
-# __C.HP_SEARCH.LaSOT = [0.42, 0.05, 0.16]
+# __C.HP_SEARCH.LaSOT = [0.45, 0.05, 0.18]
 
 # __C.HP_SEARCH.TrackingNet = [0.4, 0.05, 0.4]

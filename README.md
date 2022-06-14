@@ -9,11 +9,13 @@ pip install -r requirements.txt
 
 ## 2. Test
 
-<table>    <tr>
+<table>    
+    <tr>
         <td colspan="2" align=center> Dataset</td>
         <td align=center>SiamGAT</td>
         <td align=center>SiamGAT*</td>
-        <td align=center>Model Link</td>
+        <td align=center>SiamGAT Model Link</td>
+        <td align=center>SiamGAT* Model Link</td>
     </tr>
     <tr>
         <td rowspan="3" align=center>GOT10k</td>
@@ -22,6 +24,10 @@ pip install -r requirements.txt
         <td rowspan="3" align=center>
 			<a href="https://drive.google.com/file/d/1g4ETsJF_jtvpn0-6XF0VGxCtg67-EFmc/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1wap-r-57Rl9NGndiSNAfHw">BaiduYun</a>(zktx)
+		</td>
+        <td rowspan="3" align=center>
+			<a href="https://drive.google.com/file/d/19nzlqz9aCswQwnnvc9AS7btAg_uLCTYI/view?usp=sharing">Google Driver</a>/<br>
+			<a href="https://pan.baidu.com/s/1P95mpvJGoxJ1KW8EUgfiEQ">BaiduYun</a>(d74o)
 		</td>
     </tr>
     <tr>
@@ -39,6 +45,10 @@ pip install -r requirements.txt
         <td rowspan="3" align=center>
 			<a href="https://drive.google.com/file/d/1D2FSYDepz8LU0D3ZsWPYdEIVpNItgHwl/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1Zst1o1cg_zK9YqN3meJ7Bw">BaiduYun</a>(n2sm)
+		</td>
+        <td rowspan="6" align=center>
+			<a href="https://drive.google.com/file/d/1WgZwzKzxz_qgFke8kY4UspCdXjHYxIPG/view?usp=sharing">Google Driver</a>/<br>
+			<a href="https://pan.baidu.com/s/1WyuNhoyqJqBEzDdbMVFrRA">BaiduYun</a>(fxo2)
 		</td>
     </tr>
     <tr>
@@ -66,6 +76,10 @@ pip install -r requirements.txt
 			<a href="https://drive.google.com/file/d/1LKU6DuOzmLGJr-LYm4yXciJwIizbV_Zf/view?usp=sharing">Google Driver</a>/<br>
 			<a href="https://pan.baidu.com/s/1nuK-gAX12K96CQpHbHr3tA">BaiduYun</a>(w1rs)
 		</td>
+        <td rowspan="2" align=center>
+			<a href="https://drive.google.com/file/d/1JX7j93R5tQkfxC2NHHUkoIpE2dVGrMe-/view?usp=sharing">Google Driver</a>/<br>
+			<a href="https://pan.baidu.com/s/1D_hrPpOPNcFYzaPbAINi_g">BaiduYun</a>(c6c5)
+		</td>
     </tr>
     <tr>
         <td>Precision</td>
@@ -87,14 +101,16 @@ pip install -r requirements.txt
     <tr>
         <td>Precision</td>
         <td>53.0</td> <td> 61.2 </td>
+        <td rowspan="2" align=center> - </td>
     </tr>
-    
 </table>
 
 
 Download testing datasets and put them into `test_dataset` directory. Jsons of commonly used datasets can be downloaded from [BaiduYun](https://pan.baidu.com/s/1js0Qhykqqur7_lNRtle1tA#list/path=%2F). If you want to test the tracker on a new dataset, please refer to [pysot-toolkit](https://github.com/StrangerZhang/pysot-toolkit) to set test_dataset.
 
-The tracking result can be download from [BaiduYun](https://pan.baidu.com/s/1hPqD9lvYfSAgRiQhgIpHSQ) (extract code: 5o17) or [GoogleDriver](https://drive.google.com/file/d/1lq3EOY5bC64Q_1sgggyrWe_WeCryRXgr/view?usp=sharing) for comparision.
+- Download tracking results: 
+    - SiamGAT: [BaiduYun](https://pan.baidu.com/s/1hPqD9lvYfSAgRiQhgIpHSQ) (extract code: 5o17) or [GoogleDriver](https://drive.google.com/file/d/1lq3EOY5bC64Q_1sgggyrWe_WeCryRXgr/view?usp=sharing).
+    - SiamGAT*: [BaiduYun](https://pan.baidu.com/s/1dWhUxsJyE37d8PfOdqFR_g) (extract code: kjym) or [GoogleDriver](https://drive.google.com/file/d/19nzlqz9aCswQwnnvc9AS7btAg_uLCTYI/view?usp=sharing).
 
 ```bash 
 python testTracker.py \    
