@@ -2,6 +2,9 @@ import torch
 from torch import nn
 import math
 
+from pysot.models.head.head_utils import ConvMixerBlock
+
+
 
 class CARHead(torch.nn.Module):
     def __init__(self, cfg, in_channels):
