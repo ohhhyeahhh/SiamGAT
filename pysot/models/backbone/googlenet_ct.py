@@ -22,7 +22,7 @@ class Inception3_ct(nn.Module):
     """
 
     def __init__(self, transform_input=False):
-        super(Inception3, self).__init__()
+        super(Inception3_ct, self).__init__()
         self.Conv2d_1a_3x3 = BasicConv2d(3, 32, kernel_size=3, stride=2)
         self.Conv2d_2a_3x3 = BasicConv2d(32, 32, kernel_size=3)
         self.Conv2d_2b_3x3 = BasicConv2d(32, 64, kernel_size=3, padding=1)
